@@ -158,7 +158,7 @@ fun InputFragment(navController: NavController) {
 @Composable
 fun DataFragment(navController: NavController, city: String) {
     val City: String = formatCityName(city)
-    var isApiLoading: Boolean by remember { mutableStateOf(!true) }
+    var isApiLoading: Boolean by remember { mutableStateOf(true) }
     var weather: Weather by remember { mutableStateOf(Weather()) }
     var wind: Wind by remember { mutableStateOf(Wind()) }
 
